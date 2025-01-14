@@ -3,7 +3,7 @@
  * each day’s temperature is higher than on the previous day in that sequence.
  *
  * @author Zach Blick
- * @author YOUR NAME HERE
+ * @author Sabrina Vohra
  */
 
 public class WeatherPatterns {
@@ -16,6 +16,10 @@ public class WeatherPatterns {
      */
     public static int longestWarmingTrend(int[] temperatures) {
         // TODO: Write your code here!
+
+        //
+
+
 
         return 0;
     }
