@@ -27,8 +27,10 @@ public class WeatherPatterns {
         int currentHighest = 1;
         int currentLongest = 0;
         int totalLongest = 0;
-        recurse(temperatures, 0, currentLongest, currentHighest, totalLongest);
-        // Starts at the next index every time so the list can start at later points
+        for(int i = 0; i < temperatures.length; i++) {
+            recurse(temperatures, 0, currentLongest, currentHighest, totalLongest);
+        }
+        // Starts at the next index every time so the list can start at later prints
 //        for(int i = 0; i < temperatures.length; i++) {
 //            for(int j = 0; j < temperatures.length; j++) {
 //                if(temperatures[j] > currentHighest) {
@@ -55,7 +57,6 @@ public class WeatherPatterns {
         }
 
         recurse(temperatures, index + 1, currentLongest, currentHighest, totalLongest);
-        recurse(temperatures, index + 2, currentLongest, currentHighest, totalLongest);
     }
 }
 

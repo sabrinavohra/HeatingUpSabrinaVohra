@@ -6,6 +6,7 @@ Name: Sabrina Vohra
 | 1/14 | 10:30 - 10:50pm | I started writing out pseudocode and tested out a small algorithm that moves through the list from different points and finds values that are greater than the previous values. The solution seems pretty close as it passes 4/5 tests, but the final test is off by a large margin. |
 | 1/15 |  9:00 - 9:30am  |                                                                                                                                                                                       I started working through a recursive approach with a similar concept to my original solution. |
 | 1/15 |  9:30 - 9:55am  |                                                                                                                                                            I worked alongside my classmates to continue thinking through my recursive solution but didn't make much coding progress. |
+| 1/15 | 10:00 - 10:30pm |                                                                                                                                             I continued working on my recursive approach but struggled finding a better solution than the iterative approach I had previously tried. |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.
