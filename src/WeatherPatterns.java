@@ -30,7 +30,7 @@ public class WeatherPatterns {
         for(int i = 0; i < temperatures.length; i++) {
             recurse(temperatures, 0, currentLongest, currentHighest, totalLongest);
         }
-        // Starts at the next index every time so the list can start at later prints
+        // Starts at the next index every time so the list can start at later points
 //        for(int i = 0; i < temperatures.length; i++) {
 //            for(int j = 0; j < temperatures.length; j++) {
 //                if(temperatures[j] > currentHighest) {
@@ -44,6 +44,9 @@ public class WeatherPatterns {
 //        }
         return totalLongest;
     }
+    // Recursive approach
+        // Idea: move through each possible next temperature and add it to the current list and see if it works
+            // Have multiple different lists to add to and check so that numbers can be added or not added
     public static void recurse(int[] temperatures, int index, int currentLongest, int currentHighest, int totalLongest) {
         if(index > temperatures.length) {
             return;
@@ -57,6 +60,7 @@ public class WeatherPatterns {
         }
 
         recurse(temperatures, index + 1, currentLongest, currentHighest, totalLongest);
+        index = index + 1;
     }
 }
 
