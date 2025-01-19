@@ -8,7 +8,8 @@ Name: Sabrina Vohra
 | 1/15 |  9:30 - 9:55am   |                                                                                                                                                            I worked alongside my classmates to continue thinking through my recursive solution but didn't make much coding progress. |
 | 1/15 | 10:00 - 10:30pm  |                                                                                                                                             I continued working on my recursive approach but struggled finding a better solution than the iterative approach I had previously tried. |
 | 1/15 | 10:30 - 11:00pm  |                                                                                                                                                                                                                                    I thought through more of the recursive approach. |
-| 1/19 | 12:55pm - 1:10pm |                                                                                                                                                                                  I created an adjacency list by holding the indices of lower temperatures in an Array of ArrayLists. |
+| 1/19 | 12:55pm - 1:20pm |                                                                I created an adjacency list by holding the indices of lower temperatures in an Array of ArrayLists. I also created the LongestPathTo() method, but am not sure how and where to call it within LongestWarmingTrend(). |
+ |      |                  |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.

@@ -11,29 +11,37 @@ import java.util.ArrayList;
 public class WeatherPatterns {
     /**
      * Longest Warming Trend
+     *
      * @param temperatures
      * @return the longest run of days with increasing temperatures
      */
+
     public static int longestWarmingTrend(int[] temperatures) {
         // TODO: Write your code here!
-
         ArrayList[] list = new ArrayList[temperatures.length];
 
         // Create adjacency list to hold values for each node that lead to it
-        for(int i = 0; i < temperatures.length; i++) {
-            for(int j = 0; j < i; j++) {
-                if(temperatures[j] < temperatures[i]) {
+        for (int i = 0; i < temperatures.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (temperatures[j] < temperatures[i]) {
                     // Saves index of lower value
                     list[i].add(j);
                 }
             }
         }
+        return LongestPathTo(temperatures.length);
+    }
+
+    public static int LongestPathTo(int index) {
+        int len = 0;
+        for (int i = 0; i < index; i++) {
+            len = Math.max(len, LongestPathTo(i));
+        }
+        return len + 1;
+    }
 
 
-        public static void longestPathTo()
-
-
-//        // Goal: find the longest streak of increasing numbers, not necessarily consecutive
+    //        // Goal: find the longest streak of increasing numbers, not necessarily consecutive
 //        // Find outliers? Find the highest values towards the beginning of the list and dis-include them? Sort by a high value found between lower values
 //
 //        // Pseudocode idea:
@@ -62,8 +70,8 @@ public class WeatherPatterns {
 //        return totalLongest;
 //    }
     // Recursive approach
-        // Idea: move through each possible next temperature and add it to the current list and see if it works
-            // Have multiple different lists to add to and check so that numbers can be added or not added
+    // Idea: move through each possible next temperature and add it to the current list and see if it works
+    // Have multiple different lists to add to and check so that numbers can be added or not added
     public static void recurse(int[] temperatures, int index, int currentLongest, int currentHighest, int totalLongest) {
 //        if(index > temperatures.length) {
 //            return;
@@ -79,5 +87,5 @@ public class WeatherPatterns {
 //        recurse(temperatures, index + 1, currentLongest, currentHighest, totalLongest);
 //        index = index + 1;
 //    }
+    }
 }
-
